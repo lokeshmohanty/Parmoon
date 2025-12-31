@@ -2,14 +2,14 @@
 
 ## Installation
 
-- Setup intel [oneAPI compilers](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-download.html)
+- Setup [intel oneAPI compilers](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?packages=oneapi-toolkit&oneapi-toolkit-os=linux&oneapi-lin=offline)
 
 ```sh
 # Download the installer
-wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/2ad98b49-1fb2-4294-ab3d-6889b434ebd3/intel-onemkl-2025.3.0.462_offline.sh
+wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/d640da34-77cc-4ab2-8019-ac5592f4ec19/intel-oneapi-base-toolkit-2025.3.0.375_offline.sh
 
 # Run the installer
-sudo sh ./intel-onemkl-2025.3.0.462_offline.sh
+sudo sh ./intel-oneapi-base-toolkit-2025.3.0.375_offline.sh -a --silent --cli --eula accept
 ```
 
 - Install dependencies
