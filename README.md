@@ -5,13 +5,19 @@
 - Setup intel [oneAPI compilers](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-download.html)
 
 ```sh
-# For Ubuntu
-
-## Download the installer
+# Download the installer
 wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/2ad98b49-1fb2-4294-ab3d-6889b434ebd3/intel-onemkl-2025.3.0.462_offline.sh
 
-## Run the installer
+# Run the installer
 sudo sh ./intel-onemkl-2025.3.0.462_offline.sh
+```
+
+- Install dependencies
+
+```sh
+# For Ubuntu
+sudo apt update
+sudo apt -y install cmake pkg-config build-essential
 ```
 
 - Add the intel compilers to path
@@ -25,17 +31,17 @@ sudo sh ./intel-onemkl-2025.3.0.462_offline.sh
 - Clone this repository
 
 ```sh
-git clone https://github.com/airexlab/ParMooN_CMG.git
-cd ParMooN_CMG
+git clone https://github.com/airexlab/ParMooN_CMG.git -o ParMooN
+cd ParMooN
 ```
 
-- Set the main file, output directory and other configuration in `UserConfig.cmake`
+- Set the **main file**, **output directory** and other configuration in `UserConfig.cmake`
 
 - Build the executable
 
 ```sh
-mkdir build
-cd build
+mkdir BUILD
+cd BUILD
 cmake ..
 make -j<number-of-processors>
 ```
@@ -43,6 +49,6 @@ make -j<number-of-processors>
 - Run the executable file generated in the output directory
 
 ```sh
-cd ../../ParMooN_Output/CD2D
+cd ../OUTPUT/CD2D
 ./parmoon_2D_SEQUENTIAL.exe
 ```

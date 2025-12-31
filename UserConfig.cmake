@@ -42,13 +42,13 @@ set(AParMooN_MPI_IMPLEMENTATION "INTELMPI" CACHE STRING "select the MPI Implemen
 # set the path to save the exe file ....................................................................................
 #.......................................................................................................................
 # set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/aletnse3d" CACHE STRING "select the model")
-set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/CD2D" CACHE STRING "select the model")
-# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/NSE3D" CACHE STRING "select the model")
-#  set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/TNSE3D" CACHE STRING "select the model")
-# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/thivin3d" CACHE STRING "select the model")
-#set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/burger" CACHE STRING "select the model")
-# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/cd1dANN" CACHE STRING "select the model")
-# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../ParMooN_Output/ANNRegression" CACHE STRING "select the model")
+set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/CD2D" CACHE STRING "select the model")
+# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/NSE3D" CACHE STRING "select the model")
+#  set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/TNSE3D" CACHE STRING "select the model")
+# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/thivin3d" CACHE STRING "select the model")
+#set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/burger" CACHE STRING "select the model")
+# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/cd1dANN" CACHE STRING "select the model")
+# set(AParMooN_OUTPUT_DIR_PATH "${CMAKE_SOURCE_DIR}/../OUTPUT/ANNRegression" CACHE STRING "select the model")
 
 set(USE_PARMOON_DEFINE -D__PRIVATE__)
 
