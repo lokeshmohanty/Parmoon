@@ -29,12 +29,14 @@ set(AParMooN_MODEL "${PROJECT_SOURCE_DIR}/2DPrograms/CD2D_ParMooN.C" CACHE STRIN
 # set(AParMooN_MODEL "${PROJECT_SOURCE_DIR}/ANNPrograms/ANN_SUPG.C" CACHE STRING "Enter to select the Main file of the model")
 
 # selection of architect type (LINUX64 MAC64 INTEL64 TYRONE64 CRAY64)
+# set(AParMooN_ARCH "LINUX64" CACHE STRING "select the machine type")
 set(AParMooN_ARCH "INTEL64" CACHE STRING "select the machine type")
 
 #  selection of program type (SEQUENTIAL SMPI MPI OMPONLY HYBRID SCUDA)
 set(AParMooN_PARALLEL_TYPE "SEQUENTIAL" CACHE STRING "select the parallel type")
 
 #  selection of program type (MPICH OPENMPI INTELMPI CRAYMPI MACMPI)
+# set(AParMooN_MPI_IMPLEMENTATION "OPENMPI" CACHE STRING "select the MPI Implementation type")
 set(AParMooN_MPI_IMPLEMENTATION "INTELMPI" CACHE STRING "select the MPI Implementation type")
  
 # set the path to save the exe file ....................................................................................

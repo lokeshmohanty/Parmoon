@@ -277,10 +277,10 @@ elseif("${AParMooN_ARCH}" STREQUAL "INTEL64")
   
     include_directories("/opt/intel/include")
   
-    find_path(CPATH  icc)
-    set(CMAKE_C_COMPILER ${CPATH}/icc)
-    find_path(CXXPATH icpc)  
-    set(CMAKE_CXX_COMPILER ${CXXPATH}/icpc)  
+    find_path(CPATH  icx)
+    set(CMAKE_C_COMPILER ${CPATH}/icx)
+    find_path(CXXPATH icpx)  
+    set(CMAKE_CXX_COMPILER ${CXXPATH}/icpx)  
   endif("${AParMooN_PARALLEL_TYPE}" STREQUAL "MPI"  OR "${AParMooN_PARALLEL_TYPE}" STREQUAL "HYBRID" OR "${AParMooN_PARALLEL_TYPE}" STREQUAL "SMPI")  
   
 # message("MPI_CXXPATH  = ${CXXPATH}")
